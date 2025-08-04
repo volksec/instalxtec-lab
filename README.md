@@ -35,7 +35,7 @@ Este é um ambiente de laboratório com vulnerabilidades intencionais para fins 
 ### Instalação
 ```bash
 # Clone o repositório
-git clone <repository-url>
+git clone https://github.com/volksec/instalxtec-lab
 cd instalxtec-lab
 
 # Instale as dependências
