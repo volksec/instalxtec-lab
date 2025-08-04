@@ -13,16 +13,11 @@ Este é um ambiente de laboratório com vulnerabilidades intencionais para fins 
 - Ausência de autenticação e verificação de autorização
 - **Exemplo**: `123.456.789-00` exibe dados sensíveis sem autenticação
 
-### 2. Excessive Data Exposure (Alta Criticidade)
-- A aplicação expõe todos os dados do cliente, incluindo informações sensíveis
-- Tokens JWT e permissões são exibidos na interface
-- **Exemplo**: Dados como `token` e `permissao` são visíveis ao usuário
-
-### 3. IDOR - Insecure Direct Object Reference (Alta Criticidade)
+### 2. IDOR - Insecure Direct Object Reference (Alta Criticidade)
 - CPFs podem ser enumerados para acessar perfis diferentes
 - **Exemplo**: Alterar a URL `/detalhes/123.456.789-00` para `/detalhes/987.654.321-11`
 
-### 4. SQL Injection (Criticidade Crítica)
+### 3. SQL Injection (Criticidade Crítica)
 - Campo CPF aceita payloads de SQL injection
 - **Exemplo**: `' OR '1'='1` retorna todos os usuários do sistema
 

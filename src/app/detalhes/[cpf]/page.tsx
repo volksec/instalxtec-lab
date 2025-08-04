@@ -157,29 +157,6 @@ export default function DetalhesPage() {
                         ))}
                       </div>
                     </div>
-
-                    <Separator />
-
-                    {/* VULNERABILITY: Excessive Data Exposure */}
-                    <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-                      <h3 className="text-lg font-semibold text-red-900 mb-3">
-                        🚨 Dados Sensíveis (Exposição Excessiva)
-                      </h3>
-                      <div className="space-y-2">
-                        <div>
-                          <span className="font-medium text-red-700">Token de Acesso:</span>
-                          <p className="text-red-900 font-mono text-sm bg-red-100 p-2 rounded">
-                            {user.token}
-                          </p>
-                        </div>
-                        <div>
-                          <span className="font-medium text-red-700">Nível de Permissão:</span>
-                          <p className="text-red-900 font-mono text-sm bg-red-100 p-2 rounded">
-                            {user.permissao}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
                   </CardContent>
                 </Card>
 
@@ -203,12 +180,6 @@ export default function DetalhesPage() {
                           <h4 className="font-semibold text-yellow-800 mb-2">Broken Access Control</h4>
                           <p className="text-yellow-700">
                             Nenhuma autenticação é exigida para acessar os dados.
-                          </p>
-                        </div>
-                        <div>
-                          <h4 className="font-semibold text-yellow-800 mb-2">Excessive Data Exposure</h4>
-                          <p className="text-yellow-700">
-                            Dados sensíveis como token e permissões são expostos.
                           </p>
                         </div>
                         <div>
